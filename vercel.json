@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://your-backend.onrender.com/api/$1"
+    }
+  ],
+  "env": {
+    "VITE_BACKEND_URL": "https://your-backend.onrender.com"
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install"
+}
